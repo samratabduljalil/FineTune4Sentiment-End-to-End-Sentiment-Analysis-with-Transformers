@@ -1,7 +1,7 @@
-# 🎓 Educational Sentiment Analysis with Transformer Models
+# 🎓 Educational Sentiment Analysis with Transformer Model (DistilBERT (distilbert-base-uncased))
 A comprehensive sentiment analysis pipeline for educational conversations using state-of-the-art transformer models. This project includes extensive exploratory data analysis (EDA), advanced text preprocessing, model fine-tuning, and detailed evaluation with visualizations.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -17,7 +17,7 @@ A comprehensive sentiment analysis pipeline for educational conversations using 
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
-## 🎯 Overview
+## Overview
 
 This project performs sentiment analysis on educational conversations, classifying text into three categories:
 - **Positive** 😊
@@ -26,16 +26,16 @@ This project performs sentiment analysis on educational conversations, classifyi
 
 The pipeline leverages **DistilBERT**, a distilled version of BERT with ~66M parameters, providing an excellent balance between performance and efficiency.
 
-## ✨ Features
+## Features
 
-### 🔍 Comprehensive EDA
+### Comprehensive EDA
 - Text length and word count statistics
 - Sentiment distribution analysis
 - WordCloud generation per sentiment
 - Top words and bigram analysis
 - Word frequency heatmaps
 
-### 🧹 Advanced Text Preprocessing
+### Advanced Text Preprocessing
 - Contraction expansion ("can't" → "cannot")
 - URL, email, and HTML tag removal
 - Accent normalization
@@ -45,14 +45,14 @@ The pipeline leverages **DistilBERT**, a distilled version of BERT with ~66M par
 - Sentiment word normalization
 - Rare word filtering
 
-### 🤖 Model Training
+### Model Training
 - Fine-tuning pre-trained transformer models
 - Configurable hyperparameters
 - Mixed precision training (FP16)
 - Automatic best model selection
 - Stratified train/validation/test split
 
-### 📊 Evaluation & Visualization
+### Evaluation & Visualization
 - Confusion matrices (raw and normalized)
 - Per-class metrics (Precision, Recall, F1-Score)
 - Multi-class ROC curves with AUC scores
@@ -60,7 +60,7 @@ The pipeline leverages **DistilBERT**, a distilled version of BERT with ~66M par
 - Class distribution analysis
 - Performance summary dashboards
 
-## 📊 Dataset
+## Dataset
 
 **Source**: Educational Conversations with Sentiment Dataset
 
@@ -83,7 +83,7 @@ Test:       20% (stratified)
 ## 🚀 Installation
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.10 or higher
 - pip package manager
 - (Optional) CUDA-enabled GPU for faster training
 
@@ -110,7 +110,7 @@ nltk.download('punkt_tab')
 ```
 
 
-## 💻 Usage
+## Usage
 
 ### 1. Exploratory Data Analysis
 ```python
@@ -184,7 +184,7 @@ print(result)
 # Output: [{'label': 'Positive', 'score': 0.98}]
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Exploration
 - Statistical analysis of text features
@@ -237,7 +237,7 @@ Cleaned Text
 - AUC-ROC (per class and macro)
 - Confusion Matrix
 
-## 📈 Results
+## Results
 
 ### Model Performance
 
@@ -282,7 +282,7 @@ Actual  Neg  [XX] [XX] [XX]
 ### ROC Curves
 ![ROC Curves](results/roc_curves.png)
 
-## 🎓 Key Insights
+## Key Insights
 
 1. **Preprocessing Impact**: Text preprocessing reduces word count by ~X%, improving model efficiency
 2. **Class Balance**: [Observation about class distribution]
@@ -290,7 +290,7 @@ Actual  Neg  [XX] [XX] [XX]
 4. **Model Performance**: DistilBERT achieves strong performance with efficient inference
 5. **Text Length**: [Insights about text length vs sentiment relationship]
 
-## 🛠️ Advanced Configuration
+##  Advanced Configuration
 
 ### Custom Preprocessing Options
 ```python
@@ -322,7 +322,7 @@ training_args = TrainingArguments(
 ```
 
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -343,7 +343,7 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Hugging Face** for the Transformers library
 - **DistilBERT** authors for the efficient model architecture
@@ -351,7 +351,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Kaggle** community for dataset and resources
 - Contributors and maintainers of open-source libraries
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Add support for multi-label classification.
 - Experiment with advanced transformers (e.g., RoBERTa, DeBERTa, or T5).
@@ -360,7 +360,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Samrat Abdul Jalil**  
 AI/ML Engineer | NLP & Computer Vision Engineer  
