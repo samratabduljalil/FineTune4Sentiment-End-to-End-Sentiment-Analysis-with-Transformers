@@ -80,7 +80,7 @@ Validation: 12% (stratified)
 Test:       20% (stratified)
 ```
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -265,7 +265,7 @@ Actual  Neg  [XX] [XX] [XX]
         Pos  [XX] [XX] [XX]
 ```
 
-## 📊 Visualizations
+## Visualizations
 
 ### Sentiment Distribution
 ![Sentiment Distribution](results/sentiment_distribution.png)
