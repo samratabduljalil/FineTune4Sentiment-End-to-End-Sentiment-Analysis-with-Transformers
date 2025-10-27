@@ -11,7 +11,6 @@ A comprehensive sentiment analysis pipeline for educational conversations using 
 - [Usage](#usage)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Visualizations](#visualizations)
 - [Model Performance](#model-performance)
 - [Contributing](#contributing)
 - [License](#license)
@@ -70,8 +69,8 @@ The pipeline leverages **DistilBERT**, a distilled version of BERT with ~66M par
 
 **Sample Statistics**:
 - Total samples: [Varies by dataset]
-- Average text length: ~[X] characters
-- Average word count: ~[Y] words
+- Average text length: 24.08 characters
+- Average word count: 3.0 words
 
 ### Data Split
 ```
@@ -243,44 +242,21 @@ Cleaned Text
 
 | Metric | Score |
 |--------|-------|
-| **Accuracy** | XX.XX% |
-| **Macro F1-Score** | XX.XX% |
-| **Weighted F1-Score** | XX.XX% |
-| **Macro AUC-ROC** | XX.XX |
+| **Accuracy** | **92.00%** |
+| **Macro F1-Score** | **92.00%** |
+| **Weighted F1-Score** | **92.00%** |
+| **Macro AUC-ROC** | *N/A* |
 
 ### Per-Class Performance
 
 | Sentiment | Precision | Recall | F1-Score | Support |
 |-----------|-----------|--------|----------|---------|
-| **Negative** | XX.XX% | XX.XX% | XX.XX% | XXX |
-| **Neutral** | XX.XX% | XX.XX% | XX.XX% | XXX |
-| **Positive** | XX.XX% | XX.XX% | XX.XX% | XXX |
+| **Negative** | 94.00% | 94.00% | 94.00% | 51 |
+| **Neutral** | 90.00% | 90.00% | 90.00% | 30 |
+| **Positive** | 92.00% | 92.00% | 92.00% | 50 |
 
-### Confusion Matrix
-```
-                Predicted
-              Neg  Neu  Pos
-Actual  Neg  [XX] [XX] [XX]
-        Neu  [XX] [XX] [XX]
-        Pos  [XX] [XX] [XX]
-```
+<img width="936" height="506" alt="Screenshot (231)" src="https://github.com/user-attachments/assets/6940dfdd-99b7-466c-b8e4-b33773f2c0ed" />
 
-## Visualizations
-
-### Sentiment Distribution
-![Sentiment Distribution](results/sentiment_distribution.png)
-
-### Word Clouds
-![WordClouds](results/wordclouds.png)
-
-### Text Length Analysis
-![Text Length](results/text_length_boxplot.png)
-
-### Evaluation Summary
-![Evaluation](results/evaluation_summary.png)
-
-### ROC Curves
-![ROC Curves](results/roc_curves.png)
 
 ## Key Insights
 
