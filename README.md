@@ -89,8 +89,8 @@ Test:       20% (stratified)
 
 ### Clone Repository
 ```bash
-git clone https://github.com/yourusername/educational-sentiment-analysis.git
-cd educational-sentiment-analysis
+git clone https://github.com/samratabduljalil/FineTune4Sentiment-End-to-End-Sentiment-Analysis-with-Transformers.git
+cd FineTune4Sentiment-End-to-End-Sentiment-Analysis-with-Transformers
 ```
 
 ### Install Dependencies
@@ -173,8 +173,8 @@ from transformers import pipeline
 # Load trained model
 classifier = pipeline(
     "sentiment-analysis",
-    model="./models/canteen_sentiment_model_100m",
-    tokenizer="./models/canteen_sentiment_model_100m"
+    model="./Educational_Conversations_sentiment_model",
+    tokenizer="./Educational_Conversations_sentiment_model"
 )
 
 # Predict sentiment
@@ -321,25 +321,6 @@ training_args = TrainingArguments(
 )
 ```
 
-## 🔄 Model Comparison
-
-| Model | Parameters | Accuracy | F1-Score | Inference Time |
-|-------|------------|----------|----------|----------------|
-| DistilBERT | 66M | XX.XX% | XX.XX% | Xms |
-| BERT-base | 110M | XX.XX% | XX.XX% | Xms |
-| RoBERTa | 125M | XX.XX% | XX.XX% | Xms |
-
-## 🚀 Future Improvements
-
-- [ ] Implement data augmentation techniques
-- [ ] Experiment with larger models (BERT, RoBERTa, ALBERT)
-- [ ] Add cross-validation for robust evaluation
-- [ ] Deploy model as REST API
-- [ ] Create web interface for real-time predictions
-- [ ] Implement ensemble methods
-- [ ] Add multi-language support
-- [ ] Optimize inference speed
-- [ ] Add explainability features (LIME, SHAP)
 
 ## 🤝 Contributing
 
@@ -370,23 +351,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Kaggle** community for dataset and resources
 - Contributors and maintainers of open-source libraries
 
-## 📧 Contact
+## 🚀 Future Improvements
 
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
-
-**Project Link**: [https://github.com/yourusername/educational-sentiment-analysis](https://github.com/yourusername/educational-sentiment-analysis)
-
-## 📚 References
-
-1. Sanh, V., et al. (2019). DistilBERT, a distilled version of BERT. arXiv preprint arXiv:1910.01108.
-2. Devlin, J., et al. (2018). BERT: Pre-training of Deep Bidirectional Transformers. arXiv preprint arXiv:1810.04805.
-3. Hugging Face Transformers Documentation: https://huggingface.co/docs/transformers
-
-## ⭐ Star History
-
-If you find this project helpful, please consider giving it a star! ⭐
+- Add support for multi-label classification.
+- Experiment with advanced transformers (e.g., RoBERTa, DeBERTa, or T5).
+- Integrate hyperparameter tuning.
+- Deploy the model using FastAPI or Streamlit.
 
 ---
+
+## 👨‍💻 Author
+
+**Samrat Abdul Jalil**  
+AI/ML Engineer | NLP & Computer Vision Engineer  
+[LinkedIn](https://www.linkedin.com/in/samratabduljalil) | [GitHub](https://github.com/samratabduljalil)
+
+---
+
 
 **Made with ❤️ for the NLP community**
 
